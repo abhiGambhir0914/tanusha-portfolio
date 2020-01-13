@@ -680,17 +680,22 @@ select option,
 /* PERSONA SLIDER */
 
 .persona-slider {
+  font-weight: 500;
   width: 95%;
   position: relative;
-  max-width: 800px;
+  max-width: 100%;
   margin: auto;
   background: #e0e0e0;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 25px;
+  padding: 30px;
   border-radius: 25px;
-  height: 440px;
+  /* min-height: 440px; */
+  height: 530px;
   margin-bottom: 25px;
   transition: all .3s;
+}
+.persona-slider ul{
+  padding-left: 0px;
 }
 @media screen and (max-width: 992px) {
   .persona-slider {
@@ -799,10 +804,13 @@ select option,
   margin-bottom: 20px;
 }
 .persona-slider__text {
-  color: #4e4a67;
+  color: #272333;
   margin-bottom: 15px;
   line-height: 1.5em;
-  font-size: 12px;
+  font-size: 13px;
+}
+.persona-slider li{
+  color: #272333;
 }
 .persona-slider__button {
   display: inline-flex;
@@ -900,9 +908,11 @@ select option,
     grid-template-areas:
         'bio bio'
         'dev app'
-        'content1 content2';
+        'content1a content2a'
+        'content1b content2b';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 72px auto;
+    grid-template-rows: 100px 100px auto auto;
+  }
 }
 .persona-slider__content_coinmart{
     grid-template-areas:
@@ -932,17 +942,26 @@ select option,
 .apps div{
   display: flex;
 }
-.content1{
-  grid-area: content1;
+.content1a, .content1b{
+  grid-area: content1a;
+  padding-right: 30px;
   color: #44566C;
-  font-size: 11px;
-  padding-right: 20px;
+  font-size: 12px;
+  text-align: justify;
+  padding-left: 10px;
 }
-.content2{
-  grid-area: content2;
+.content2a, .content2b{
+  grid-area: content2a;
   color: #44566C;
-  font-size: 11px;
-
+  font-size: 12px;
+  text-align: justify;
+  padding-left: 10px;
+}
+.content1b{
+  grid-area: content1b;
+}
+.content2b{
+  grid-area: content2b;
 }
 .persona-slider__img p{
   font-size: 15px;
@@ -961,4 +980,9 @@ select option,
 }
 .coin_chart img{
   box-shadow: 0px 20px 15px rgba(32, 29, 42, 0.75) !important;
+}
+
+.left-zone{
+  margin-left: 10px;  
+  width: 50%;
 }
