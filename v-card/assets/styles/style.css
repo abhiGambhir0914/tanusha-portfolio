@@ -151,7 +151,7 @@ body, html {
 body {
   background-color: #F5F6F7;
   color: #44566C;
-  font-family: "Archivo", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   font-size: .9375rem;
   line-height: 1.7;
@@ -1488,7 +1488,7 @@ iframe {
   transition: all .3s ease-in-out;
 }
 .sidebar__user-name {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: "Merriweather", serif;
   margin-bottom: .9rem;
   position: relative;
@@ -1801,6 +1801,7 @@ iframe {
 }
 .timeline__description {
   margin-top: .5rem;
+  font-size: 0.8rem
 }
 @media only screen and (max-width: 580px) {
   .timeline__description {
