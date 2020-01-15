@@ -990,6 +990,7 @@ select option,
 }
 .coin_chart img{
   box-shadow: 0px 20px 15px rgba(32, 29, 42, 0.75) !important;
+  border-radius: 20px;
 }
 
 .left-zone{
