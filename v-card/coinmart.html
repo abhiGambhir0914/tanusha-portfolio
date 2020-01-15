@@ -385,7 +385,7 @@
 					</div>
 					
 					<!-- Footer -->
-					<footer class="footer">© 2019 vCard</footer>
+					<footer class="footer">© 2019 Ttanusha</footer>
 		        </div>
 				
 			</div>
@@ -429,7 +429,9 @@
 
 	<script type="text/javascript">
 		if ($(window).width() < 480) {
-			console.log('sda')
+			$( ".outer-area-element" ).children().hide()
+			$( ".outer-area-element" ).css('height','60vh')
+			$(".outer-area-element").append("<div class='caption-post mobile-disable-text'> <p>We are working on bringing the page on this device. Please view it on your desktop and stay tuned for further update. </p>");
 		}
 
 		$(window).on('load',function(){

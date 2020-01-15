@@ -1040,3 +1040,7 @@ select option,
   transform: rotate(175deg);
   left: -2%;
 }
+.mobile-disable-text{
+  margin-top: 18vh;
+    text-align: center;
+}

@@ -600,7 +600,7 @@
 					</div>
 					
 					<!-- Footer -->
-					<footer class="footer">© 2019 vCard</footer>
+					<footer class="footer">© 2019 Ttanusha</footer>
 		        </div>
 				
 			</div>
@@ -641,6 +641,12 @@
 
 
 	<script type="text/javascript">
+		if ($(window).width() < 480) {
+			$( ".outer-area-element" ).children().hide()
+			$( ".outer-area-element" ).css('height','60vh')
+			$(".outer-area-element").append("<div class='caption-post mobile-disable-text'> <p>We are working on bringing the page on this device. Please view it on your desktop and stay tuned for further update. </p>");
+		}
+
 		$(window).on('load',function(){
 			var swiper = new Swiper('.swiper-container', {
 			paginationClickable: true,
@@ -661,29 +667,6 @@
 
 		});     
 		});
-
-		// var swiper = new Swiper('.persona-slider', {
-		// spaceBetween: 30,
-		// effect: 'fade',
-		// loop: true,
-		// mousewheel: {
-		// 	invert: false,
-		// },
-		// // autoHeight: true,
-		// pagination: {
-		// 	el: '.persona-slider__pagination',
-		// 	clickable: true,
-		// }
-		// });
-
-		// function changepersona(val){
-		// 	$('.persona-slider .swiper-slide-active').fadeOut('fast')
-		// 	if(val == '2'){
-		// 		$('#p-i-3').removeClass('hidden')
-		// 		$('#p-i-3').removeClass('swiper-slide-prev')
-		// 		$('#p-i-3').addClass('.swiper-slide-active').fadeIn('fast')
-		// 	}
-		// }
 		
 	</script>
 </body>
