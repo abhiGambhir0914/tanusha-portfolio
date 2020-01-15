@@ -520,15 +520,17 @@ select option,
 }
 #amazon-ca img{
   grid-area: c-img;
-  padding: 10px;
-  width: auto;
-  height: 220px;
+    width: 280px;
+    height: auto;
+    margin: auto;
 }
 #etsy-ca img{
   grid-area: c-img;
-    padding: 10px;
-    width: auto;
+    width: 220px;
     height: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .etsy-txt{
   grid-area: c-textdata;
@@ -912,14 +914,14 @@ select option,
         'content1b content2b';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px auto auto;
-  }
 }
 .persona-slider__content_coinmart{
     grid-template-areas:
         'bio bio'
-        'content1 content2';
+        'content1a content2a'
+        'content1b content2a';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px auto;
+    grid-template-rows: 100px auto auto;
 }
 
 .persona-slider__content .bio{
@@ -945,6 +947,13 @@ select option,
 .content1a, .content1b{
   grid-area: content1a;
   padding-right: 30px;
+  color: #44566C;
+  font-size: 12px;
+  text-align: justify;
+  padding-left: 10px;
+}
+.content2ac{
+  grid-area: content2a;
   color: #44566C;
   font-size: 12px;
   text-align: justify;
@@ -985,4 +994,18 @@ select option,
 .left-zone{
   margin-left: 10px;  
   width: 50%;
+}
+.outer-area-element{
+  position: relative;
+  z-index: 1;
+}
+.soft-triangle-element{
+  position: absolute;
+    left: 61%;
+    width: 42%;
+    transform: rotate(-5deg);
+    top: 11%;
+    height: auto;
+    opacity: 0.5;
+    z-index: -1;
 }
