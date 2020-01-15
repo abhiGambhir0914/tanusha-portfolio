@@ -1854,6 +1854,12 @@ iframe {
   left: 0;
   width: 100%;
   z-index: 1;
+  background: #304CFD;
+    border-radius: 1rem;
+}
+
+.progress-text span{
+  margin: auto;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
